@@ -1,2 +1,11 @@
 # Creadores-Program
-"La Revolución del Código"
+## "La Revolución del Código"
+
+
+# Creditos:
+- [@Trollhunters501](https://github.com/Trollhunters501)
+- [@Elchinomandarin](https://github.com/elchinomandaron)
+- [@Rext-dev](https://github.com/Rext-dev)
+<!---
+Creadores-Program/Creadores-Program 
+--->
