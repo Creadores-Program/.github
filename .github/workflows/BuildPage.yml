@@ -1,0 +1,16 @@
+name: BuildPage
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: BloggerifyT
+        uses: Creadores-Program/BloggerifyT@v1.0.1
+        with:
+          path: './webpage'
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: blogger-template
+          path: ./webpage/BloggerifyT/
