@@ -5,7 +5,6 @@ body {
     margin: 0;
     min-height: 100vh;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -69,7 +68,8 @@ footer {
 /* Perfil de integrante */
 .profile-card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     background: rgba(10, 35, 66, 0.95);
     border: 2px solid #00ff99;
@@ -78,6 +78,10 @@ footer {
     padding: 20px;
     margin: 20px 0;
     max-width: 500px;
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .profile-avatar {
@@ -155,19 +159,19 @@ footer {
 
 #contentPage,
 header,
-.profile-card,
-section {
-    word-break: break-word;
-    overflow-wrap: anywhere;
-    box-sizing: border-box;
-}
-
+section,
+.profile-name,
 .profile-desc,
 .profile-info {
     word-break: break-word;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-wrap: balance;
 }
 
 a {
     word-break: break-all;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    display: inline-block;
 }
